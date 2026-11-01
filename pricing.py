@@ -4,7 +4,7 @@
         return price
 
     # BUG 1: Calculates discount in the wrong direction.
-    return price - price * (percent / 100)
+       return price - price * percent
 
 
 def calculate_tax(price: float, tax_rate: float = 0.18) -> float:
