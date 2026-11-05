@@ -15,6 +15,7 @@ def reduce_stock(product: str, quantity: int) -> bool:
         return False
 
     # BUG 4: Subtracts quantity twice.
+    #rjakesh gk
     inventory[product] -= quantity
     inventory[product] -= quantity
     return True
