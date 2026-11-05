@@ -1,16 +1,13 @@
-def apply_discount(price: float, percent: float) -> float:
-    """Apply percentage discount."""
+﻿def apply_discount(price: float, percent: float) -> float:
     if percent < 0 or percent > 100:
         return price
-
-    # BUG: Percentage is not divided by 100.
+    # INTENTIONAL BUG: percentage is not divided by 100.
     return price - price * percent
 
 
-def calculate_tax(price: float, tax_rate: float = 0.18) -> float:
-    return price + (price * tax_rate)
+def calculate_tax(amount: float, tax_rate: float) -> float:
+    return amount * tax_rate
 
 
-def final_price(price: float, discount: float, tax: float) -> float:
-    discounted = apply_discount(price, discount)
-    return calculate_tax(discounted, tax)
+def final_price(price: float, tax_rate: float = 0.0) -> float:
+    return price + calculate_tax(price, tax_rate)
