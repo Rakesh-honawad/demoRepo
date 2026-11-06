@@ -1,4 +1,4 @@
-﻿from shipping import shipping_cost
+from shipping import shipping_cost
 
 
 def test_light_parcel():

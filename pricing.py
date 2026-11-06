@@ -1,4 +1,4 @@
-﻿def apply_discount(price: float, percent: float) -> float:
+def apply_discount(price: float, percent: float) -> float:
     if percent < 0 or percent > 100:
         return price
     # INTENTIONAL BUG: percentage is not divided by 100.

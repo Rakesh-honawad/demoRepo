@@ -1,4 +1,4 @@
-﻿from cart import cart_total
+from cart import cart_total
 
 def test_no_discount():
     assert cart_total([{"price": 10.0, "qty": 2}]) == 20.0

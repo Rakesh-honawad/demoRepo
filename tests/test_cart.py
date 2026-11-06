@@ -1,4 +1,4 @@
-﻿from cart import cart_subtotal
+from cart import cart_subtotal
 
 
 def test_cart_subtotal():

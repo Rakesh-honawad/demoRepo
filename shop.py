@@ -1,4 +1,4 @@
-﻿from cart import cart_subtotal
+from cart import cart_subtotal
 from pricing import apply_discount, calculate_tax
 from shipping import shipping_cost
 

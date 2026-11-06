@@ -1,4 +1,4 @@
-﻿from shop import checkout_total
+from shop import checkout_total
 
 
 def test_checkout_without_discount():

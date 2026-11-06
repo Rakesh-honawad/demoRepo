@@ -1,4 +1,4 @@
-﻿from pricing import apply_discount, calculate_tax
+from pricing import apply_discount, calculate_tax
 
 
 def test_ten_percent_discount():
